@@ -1,18 +1,18 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main -Entry point
  *
- * Return: Always 0 if successful
+ * Return: Always 0 when successful
  */
 
 int main(void)
 {
 	int x;
 
-	for (x = 0; x < 10; x++)
+	while (x < 10)
 	{
-		putchar(x);
+		putchar(x + '0');
 	}
 	putchar('\n');
 	return (0);

@@ -2,16 +2,19 @@
 #include "main.h"
 
 /**
- * print_last_digit - Prints the last digit of a number
- * @x: a parameter
- * Return: return 0
+ * print_last_digit - pprints last digit of a number
+ * @x: parameter
+ * Return: return x
  */
 
 int print_last_digit(int x)
 {
+	int r;
+
 	if (x < 0)
 	{
 		x = -x;
 	}
-	return (x % 10);
+	r = x % 10;
+	return (r);
 }

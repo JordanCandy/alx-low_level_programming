@@ -2,7 +2,6 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
  * print_alphabet_x10 - Prints alphabet x10
  * Result: Always 0
  */
@@ -14,7 +13,7 @@ void print_alphabet_x10(void)
 
 	for (j = 0; j < 10; j++)
 	{
-		for ( x = 'a'; x <= 'z'; x++)
+		for (x = 'a'; x <= 'z'; x++)
 		{
 			putchar(x);
 		}

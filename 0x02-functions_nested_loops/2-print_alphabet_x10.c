@@ -1,4 +1,4 @@
-#include "main.h"
+#include <main.h>
 #include <stdio.h>
 
 /**
@@ -14,7 +14,7 @@ void print_alphabet_x10(void)
 
 	for (j = 0; j < 10; j++)
 	{
-		for ( x = 'a'; x = 'z'; x++)
+		for ( x = 'a'; x <= 'z'; x++)
 		{
 			putchar(x);
 		}

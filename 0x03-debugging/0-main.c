@@ -2,7 +2,8 @@
 #include <stdio.h>
 
 /**
- * main _test function that prints positive or negative
+ * main - test function that prints positive or negative
+ *
  * Return: 0
  */
 

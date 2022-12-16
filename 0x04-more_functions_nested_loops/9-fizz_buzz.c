@@ -13,25 +13,26 @@ int main(void)
 
 	for (k = 0; k <= 100; k++)
 	{
-		if (x % 3 == 0)
+		for (x = 0; x < 101; x++)
 		{
-			printf("Fizz");
+			if (x % 3 == 0)
+			{
+				printf("Fizz");
+			}
+			else if (x % 5 == 0)
+			{
+				printf("Buzz");
+			}
+			else if (x % 3 == 0 && x % 5 == 0)
+			{
+				printf("FizzBuzz");
+			}
+			else
+			{
+				printf("%d", x);
+			}
 		}
-		else if (x % 5 ==  0)
-		{
-			printf("Buzz");
-		}
-		else if (x % 3 == 0  && x % 5 == 0)
-		{
-			printf("FizzBuzz");
-		}
-		else
-		{
-			printf("%d", x);
-		}
-		x++;
 	}
 	printf("\n");
-
 	return (0);
 }

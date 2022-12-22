@@ -1,25 +1,24 @@
-#include <stdio.h>
-#include <main.h>
+#include "main.h"
 #include <string.h>
+#include <stdio.h>
 
 /**
- * _strcat - Prints strings together
- * @dest: parm
- * @src: second parm
+ * _strcat - concatenates strings
+ * @dest: parameter
+ * @src: parameter
  * Return: string
  */
 
 char *_strcat(char *dest, char *src)
 {
-	int len = 0 i = 0;
+	int index = 0, dest_len = 0;
 
-	while (dest[len++])
-		i++;
+	while (dest[index++])
+		dest_len++;
 
-	for (len = 0; src[len]; len++)
+	for (index = 0; src[index]; index++)
 	{
-		dest[i++] = src[len];
+		dest[dest_len++] = src[index];
 	}
-
 	return (dest);
 }
